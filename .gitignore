@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# PyCharm
+.idea/
+.idea_modules/
+out/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.tox/
+.mypy_cache/
+
+# Allure reports
+allure-results/
+allure-report/
+allure-*/
