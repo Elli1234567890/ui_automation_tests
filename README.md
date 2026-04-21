@@ -28,11 +28,12 @@ source .venv/bin/activate
 # Установка зависимостей
 pip install -r requirements.txt
 
-# Параллельный запуск тестов (Chrome)
-pytest -n 3 --browser=chrome
+# Параллельный запуск
+pytest -n 3 -v
 
-# Параллельный запуск тестов (Firefox)
-pytest -n 3 --browser=firefox
+# Выбор браузера (по умолчанию Firefox)
+pytest --browser=chrome -v
+pytest --browser=firefox -v
 
 # Запуск с Allure отчетом
 pytest --alluredir=allure-results
